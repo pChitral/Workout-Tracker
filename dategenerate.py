@@ -4,7 +4,7 @@ import numpy as np
 
 dates = [] #will load dates in it 
 
-for i in range(100):
+for i in range(200):
     start = dt.datetime.today()+dt.timedelta(i)
     day = start.strftime("%A")
     if (day == "Monday" or day == "Thursday"):
