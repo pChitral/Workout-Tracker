@@ -7,7 +7,7 @@ dates = [] #will load dates in it
 for i in range(100):
     start = dt.datetime.today()+dt.timedelta(i)
     day = start.strftime("%A")
-    if (day == "Sunday" or day == "Thursday"):
+    if (day == "Monday" or day == "Thursday"):
         dates.append(start.date().strftime("%d-%m-%Y"))
 
 s = pd.Series(np.array(dates))
